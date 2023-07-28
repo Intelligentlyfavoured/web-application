@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VIEW SUPPLIERS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 3px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            background-color: #4caf50;
+            color: #ffffff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>VIEW SUPPLIER</h3>
+
+        <form action="/Projects/Supplier.php" method="post">
+            <label for="sname">Supplier name</label>
+            <input type="text" id="sname" name="sname" placeholder="Enter your full name">
+
+            <label for="SID">Supplier ID</label>
+            <input type="number" name="sid" id="SID">
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Input your address">
+
+            <label for="Phone_number">Phone number</label>
+            <input type="tel" id="Phone_number" name="Phone_number" placeholder="Enter phone number">
+
+            <label for="medcode">Medicine Code</label>
+            <input type="text" id="medcode" name="medcode" placeholder="Enter Medicine code">
+
+           
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
